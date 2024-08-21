@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>task 4</title>
+    <style>
+      .secondTable {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+      }
+
+      .textsize {
+        font-size: 85%;
+      }
+    </style>
   </head>
   <body>
     <div align="center">
@@ -42,6 +54,99 @@
       </table>
 
       <!-- table 2 -->
+      <!-- using css -->
+      <table border="1" cellspacing="0" class="secondTable">
+        <tr>
+          <td colspan="10" align="center">
+            <font color="red" class="textsize">CONSIGNOR'S DETAILS</font>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="textsize">NAME:</span></td>
+          <td colspan="9" class="textsize">MUNNA INDUSTRIES PVT LTD</td>
+        </tr>
+        <tr>
+          <td class="textsize">ADDRESS:</td>
+          <td colspan="9" class="textsize">Mirzapur</td>
+        </tr>
+        <tr>
+          <td class="textsize">EMAIL:</td>
+          <td colspan="9" class="textsize">munna@gmail.com</td>
+        </tr>
+        <tr>
+          <td class="textsize">GSTIN:</td>
+          <td colspan="4" style="padding-left: 30px; padding-right: 70px"></td>
+          <td colspan="2" class="textsize">CONTACT:</td>
+          <td colspan="4" style="padding-right: 50px" class="textsize">
+            9978451222
+          </td>
+        </tr>
+      </table>
+
+      <table border="1" cellspacing="0" class="secondTable">
+        <tr>
+          <td colspan="10" align="center">
+            <font color="red" class="textsize">CONSIGNOR'S DETAILS</font>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="textsize">NAME:</span></td>
+          <td colspan="9" class="textsize">BABLU PVT LTD</td>
+        </tr>
+        <tr>
+          <td class="textsize">ADDRESS:</td>
+          <td colspan="9" class="textsize">Near Mirzapur</td>
+        </tr>
+        <tr>
+          <td class="textsize">EMAIL:</td>
+          <td colspan="9" class="textsize">bablu@gmail.com</td>
+        </tr>
+        <tr>
+          <td class="textsize">GSTIN:</td>
+          <td colspan="4" style="padding-left: 30px; padding-right: 70px"></td>
+          <td colspan="2" class="textsize">CONTACT:</td>
+          <td colspan="4" style="padding-right: 50px" class="textsize">
+            1233455667
+          </td>
+        </tr>
+      </table>
+
+      <table border="1" cellspacing="0" class="secondTable">
+        <tr align="center">
+          <td class="textsize">G.C.NO</td>
+        </tr>
+        <tr align="center">
+          <th>BPC-001</th>
+        </tr>
+        <tr align="center">
+          <td class="textsize">Date: 05-01-2023</td>
+        </tr>
+        <tr align="center">
+          <td class="textsize">TRUCK NO</td>
+        </tr>
+        <tr align="center">
+          <th>GJ 03 AR 1234</th>
+        </tr>
+      </table>
+
+      <table border="1" cellspacing="0" class="secondTable">
+        <tr align="center">
+          <td class="textsize">
+            From <br />
+            MIRZAPUR(WEST <br />
+            BENGAL)
+          </td>
+        </tr>
+        <tr align="center">
+          <td class="textsize">
+            To <br />
+            KOLKATA(WEST <br />
+            BENGAL )
+          </td>
+        </tr>
+      </table>
+
+      <!-- using html (table under table) -->
       <!-- <div
         style="
           display: inline-block;
@@ -50,7 +155,7 @@
           margin-right: 0%;
         "
       > -->
-      <table border="0" cellspacing="10">
+      <!-- <table border="0" cellspacing="10">
         <tr>
           <td>
             <table border="1" cellspacing="0">
@@ -70,7 +175,6 @@
               <tr>
                 <td>EMAIL:</td>
                 <td colspan="9">munna@gmail.com</td>
-                <!-- <td></td> -->
               </tr>
               <tr>
                 <td>GSTIN:</td>
@@ -102,7 +206,7 @@
               <tr>
                 <td>EMAIL:</td>
                 <td colspan="9">munna@gmail.com</td>
-                <!-- <td></td> -->
+                
               </tr>
               <tr>
                 <td>GSTIN:</td>
@@ -153,29 +257,137 @@
             </table>
           </td>
         </tr>
-      </table>
-
-      <table>
+      </table> -->
+      <br />
+      <table border="1" cellspacing="0" cellpadding="6" class="secondTable">
         <tr>
+          <td rowspan="2" class="textsize">
+            No.of<br />
+            Article
+          </td>
+          <td rowspan="2" class="textsize" align="center" style="width: 51%">
+            SAID TO CONTAIN
+          </td>
+          <td colspan="2" class="textsize" align="center">WEIGHT</td>
+          <td rowspan="2" class="textsize" align="center" style="width: 20%">
+            RATE
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" class="textsize">ACTUAL</td>
+          <td colspan="1" class="textsize">CHARGE</td>
+        </tr>
+        <tr height="250px">
           <td></td>
           <td></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
+        <tr>
+          <td></td>
+          <td class="textsize" align="center">
+            We Are Not Responsible For Leakage & Brekage
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="5">Value Rs.</td>
+        </tr>
       </table>
-      <!-- </div> -->
-      <!-- table 3 -->
-      <!-- <div
-        style="
-          display: inline-block;
-          vertical-align: top;
-          width: 30%;
-          margin-right: 0%;
-        "
-      > -->
 
-      <!-- </div> -->
+      <table class="secondTable" border="1" cellspacing="0" cellpadding="19">
+        <tr>
+          <td>TO PAY</td>
+          <td>PAID(R.s)</td>
+          <td>T.B.B.(P.s)</td>
+        </tr>
+        <tr>
+          <td>Freight</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Hamali</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Advance</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <!-- last Table -->
+      <table border="1" cellspacing="0" cellpadding="5" width="20%">
+        <tr>
+          <th colspan="2">Bank Details</th>
+        </tr>
+        <tr>
+          <td>Bank Name</td>
+          <td>ICICI BANK</td>
+        </tr>
+        <tr>
+          <td>A/c. No</td>
+          <td>015305502232</td>
+        </tr>
+        <tr>
+          <td>IFSC Code</td>
+          <td>ICI0000153</td>
+        </tr>
+      </table>
+      <table border="1" cellspacing="0" cellpadding="5" width="20%">
+        <tr>
+          <th colspan="2">Bank Details</th>
+        </tr>
+        <tr>
+          <td>Bank Name</td>
+          <td>ICICI BANK</td>
+        </tr>
+        <tr>
+          <td>A/c. No</td>
+          <td>015305502232</td>
+        </tr>
+        <tr>
+          <td>IFSC Code</td>
+          <td>ICI0000153</td>
+        </tr>
+      </table>
+      <table border="1" cellspacing="0" cellpadding="5" width="20%">
+        <tr>
+          <th colspan="2">Bank Details</th>
+        </tr>
+        <tr>
+          <td>Bank Name</td>
+          <td>ICICI BANK</td>
+        </tr>
+        <tr>
+          <td>A/c. No</td>
+          <td>015305502232</td>
+        </tr>
+        <tr>
+          <td>IFSC Code</td>
+          <td>ICI0000153</td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
