@@ -8,6 +8,7 @@
       table {
         border-collapse: collapse; /* Ensures that borders collapse into a single border */
         border-spacing: 0; /* Removes any default spacing between cells */
+        /* border: 1px solid black; */
       }
 
       td {
@@ -54,8 +55,9 @@
       </tr>
     </table> -->
 
+    <h3 align="center">Text Invoice</h3>
     <!-- MAIN TABLE -->
-    <table border="1" cellspacing="0" align="center">
+    <table cellspacing="0" align="center" style="border: 1px solid black">
       <tr>
         <td>
           <!-- NESTED TABLE 1 -->
@@ -263,6 +265,86 @@
               </td>
               <td align="right" style="vertical-align: top">
                 <span style="font-size: 13px"><i>E. & O.E</i></span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <!-- table three -->
+          <table border="1" cellspacing="0" width="100%" style="font-size: 80%">
+            <tr align="center">
+              <td rowspan="3" width="35%">HSN/SAC</td>
+              <td rowspan="3">Taxable <br />value</td>
+              <td colspan="2">CGST</td>
+              <td colspan="2">SGST/UTGST</td>
+              <td rowspan="3">
+                Total <br />
+                Text Amount
+              </td>
+            </tr>
+            <tr align="center">
+              <td rowspan="2">Rate</td>
+              <td rowspan="2">Amount</td>
+            </tr>
+            <tr align="center">
+              <td>Rate</td>
+              <td>Amount</td>
+            </tr>
+            <tr align="center">
+              <td></td>
+              <td>56,000.00</td>
+              <td align="right">9%</td>
+              <td>5,040.00</td>
+              <td align="right">9%</td>
+              <td>5,040.00</td>
+              <td>10,080.00</td>
+            </tr>
+            <tr>
+              <th align="right">Total</th>
+              <th>56,000.00</th>
+              <th></th>
+              <th>5,040.00</th>
+              <th></th>
+              <th>5,040.00</th>
+              <th>10,080.00</th>
+            </tr>
+            <tr style="border-bottom: 0px">
+              <td colspan="7">
+                <p style="margin-bottom: 20%">
+                  Tax Amount (in words) :
+                  <b style="font-size: 120%">INR Ten Thousand Eighty Only</b>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <table style="font-size: 80%; border: 0px; width: 100%">
+            <tr>
+              <td style="width: 350px">
+                <p align="justify" style="margin-right: 30px">
+                  <u>Declaration</u>
+                  <br />
+
+                  We declare that this invoice shows the actual price of the
+                  goods described and that all particulars are true and correct.
+                </p>
+              </td>
+              <td
+                style="
+                  text-align: right;
+                  vertical-align: top;
+                  border: 1px solid black;
+                "
+              >
+                <span align="right"> for RAHUL </span>
+                <p style="margin-top: 8%">Authorised Signatory</p>
               </td>
             </tr>
           </table>
