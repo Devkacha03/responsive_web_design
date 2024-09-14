@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid black;
+  border-radius: 50%;
+  position: relative;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.hand {
+  position: absolute;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(90deg);
+}
+
+.hour {
+  width: 6px;
+  height: 80px;
+  top: 70px;
+  left: calc(50% - 3px);
+}
+
+.minute {
+  width: 4px;
+  height: 110px;
+  top: 40px;
+  left: calc(50% - 2px);
+}
+
+.second {
+  width: 2px;
+  height: 140px;
+  background: red;
+  top: 10px;
+  left: calc(50% - 1px);
+}
+
+.hand {
+  transform: rotate(var(--rotation));
+  transform-origin: bottom center;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Positioning the numbers around the clock */
+
+.number {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.number1 {
+  top: 15%;
+  left: 68%;
+}
+
+.number2 {
+  top: 27%;
+  left: 82%;
+}
+
+.number3 {
+  top: 47%;
+  left: 90%;
+}
+
+.number4 {
+  top: 68%;
+  left: 82%;
+}
+
+.number5 {
+  top: 82%;
+  left: 68%;
+}
+
+.number6 {
+  top: 90%;
+  left: 48%;
+}
+
+.number7 {
+  top: 82%;
+  left: 28%;
+}
+
+.number8 {
+  top: 68%;
+  left: 14%;
+}
+
+.number9 {
+  top: 48%;
+  left: 8%;
+}
+
+.number10 {
+  top: 27%;
+  left: 14%;
+}
+
+.number11 {
+  top: 15%;
+  left: 28%;
+}
+
+.number12 {
+  top: 5%;
+  left: 48%;
+}
+
+/* Style for the seconds dashes */
+
+.second-dash {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: black;
+  top: 10px;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(calc(var(--i) * 6deg));
+}
