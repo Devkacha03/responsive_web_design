@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Analyzer</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        max-width: 600px;
+        width: 100%;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #4a90e2;
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+
+      /* Textarea styling */
+      textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+        font-size: 1rem;
+        line-height: 1.5;
+        transition: border 0.3s ease;
+        resize: none;
+      }
+
+      textarea:focus {
+        outline: none;
+        border-color: #4a90e2;
+      }
+
+      /* Counts section styling */
+      .counts {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .counts span {
+        display: block;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Hover effect */
+      .counts span:hover {
+        background-color: #e8e8e8;
+      }
+
+      /* Smooth transition for updating counts */
+      .counts span[data-word-count],
+      .counts span[data-character-count],
+      .counts span[data-sentence-count],
+      .counts span[data-paragraph-count] {
+        transition: all 0.3s ease;
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 1.5em;
+        }
+        textarea {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text Analyzer</h1>
+      <textarea
+        id="inputText"
+        rows="10"
+        cols="50"
+        placeholder="Type or paste your text here..."
+      ></textarea>
+
+      <div class="counts">
+        <span>Word Count: <span data-word-count>0</span></span>
+        <span>Character Count: <span data-character-count>0</span></span>
+        <span>Sentence Count: <span data-sentence-count>0</span></span>
+        <span>Paragraph Count: <span data-paragraph-count>0</span></span>
+      </div>
+    </div>
+
+    <script>
+      const input = document.querySelector("textarea");
+      const wordCount = document.querySelector("[data-word-count]");
+      const characterCount = document.querySelector("[data-character-count]");
+      const sentenceCount = document.querySelector("[data-sentence-count]");
+      const paragraphCount = document.querySelector("[data-paragraph-count]");
+
+      function updateCounts() {
+        if (!input.value) {
+          resetCounts();
+          return;
+        }
+
+        // Count Words
+        const wordsArray = input.value
+          .split(" ")
+          .filter((word) => word.trim() !== "");
+        wordCount.innerText = wordsArray.length;
+
+        // Count Characters
+        characterCount.innerText = input.value.length;
+
+        // Count Sentences
+        const sentenceArray = input.value
+          .split(/[.?!]+/)
+          .filter((sentence) => sentence.trim() !== "");
+        sentenceCount.innerText = sentenceArray.length;
+
+        // Count Paragraphs
+        const paragraphArray = input.value
+          .split("\n")
+          .filter((p) => p.trim() !== "");
+        paragraphCount.innerText = paragraphArray.length;
+      }
+
+      function resetCounts() {
+        wordCount.textContent = "0";
+        characterCount.textContent = "0";
+        sentenceCount.textContent = "0";
+        paragraphCount.textContent = "0";
+      }
+
+      input.addEventListener("input", updateCounts);
+    </script>
+  </body>
+</html>
