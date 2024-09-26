@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" type="text/css" href="webcss.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="first-navbar">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logoone.png" alt="logo" class="logoone-img">
+          Dev kacha</div>
+        <ul class="nav-links">
+          <li><a href="#">Project</a></li>
+          <li><a href="#">About</a></li>
+          <!-- <li><a href="#">Services</a></li> -->
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section 1 -->
+    <section>
+      <div class="image-placeholder">
+        <p>Image</p>
+      </div>
+    </section>
+
+    <!-- section 2-->
+    <section>
+      <div class="mainsec">
+        <div class="column">
+          <h2>What is Lorem Ipsum?</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="column">
+          <h2>What is Lorem Ipsum?</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider section -->
+    <section>
+      <div class="slider-main">
+        <div class="slider">
+          <div class="slide">
+            <p>slider</p>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <!-- dotes -->
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section>
+      <div class="image-text-section">
+        <div class="image-placeholder">
+          <p>Image</p>
+        </div>
+        <div class="text-content">
+          <h2>What is Lorem Ipsum?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            repellat nostrum rerum autem? Dolore beatae qui molestias expedita
+            veritatis, esse alias voluptate nesciunt minima excepturi. Beatae
+            expedita ex maiores, vero exercitationem minima quas velit cum,
+            eaque tempore sequi ipsam officia eum nemo, labore dolore sunt
+            culpa? Ducimus delectus reprehenderit accusamus commodi, voluptatem
+            quaerat minima quasi itaque porro voluptatibus eaque aspernatur
+            facere, at officia asperiores tempora assumenda nobis quam
+            consequuntur iure?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Card Section -->
+    <section>
+      <div class="personal-card">
+        <div class="personal-info">
+          <div class="logo">
+            <img src="logo.png" alt="logo" />
+          </div>
+          <h1>Viraj Patel</h1>
+          <p>Web Designer at Latitude Technolabs Private Limited, Ahn.</p>
+          <div class="contact-info">
+            <p>Contact: 📞 Viraj Chapanai</p>
+            <p>📷 Instagram: viraj_patel_8888</p>
+            <p>LinkedIn: Viraj Chapani</p>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="box">
+            <h2>Project</h2>
+            <div class="grid">
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <div class="box">
+            <h2>About Us</h2>
+            <p>
+              I am Viraj Patel, a Web Designer at Latitude Technolabs Pvt Ltd,
+              Ahmedabad.
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>Family's</h2>
+            <div class="grid">
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+              <div class="grid-item"></div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
