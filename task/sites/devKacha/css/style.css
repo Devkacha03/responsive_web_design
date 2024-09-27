@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Owl-Carousel-2 {
+  background-color: #1ccacd;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.Owl-Carousel-2-paragraph {
+  font-size: 22px;
+}
+
+.Download-btn {
+  color: #1ccacd;
+  background-color: white;
+  padding: 15px 30px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.Download-btn:hover {
+  background-color: #dc3545;
+}
+
+.Github-btn {
+  color: white;
+  border-color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.footer-content {
+  font-size: 25px;
+}
+
+/* Custom slider styles */
+.owl-carousel .item {
+  background: #d33;
+  padding: 70px 30px;
+  text-align: center;
+  color: #fff;
+}
+.owl-carousel .item p {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 10;
+}
+
+.Carousel-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*docs welcome*/
+
+.blockquote {
+  border-left: 5px solid;
+}
+
+/*demos page*/
+
+.Basic-demos:hover {
+  background-color: #1ccacd !important;
+  color: white;
+}
+
+/*video page*/
+
+.owl-carousel .item-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.owl-carousel .item-video img {
+  width: 100%;
+  height: auto;
+}
+
+/*responsive.html*/
+/* .overview-section {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+} */
+
+/* .vertical-line {
+  border-left: 4px solid #26a69a;
+  height: 100%;
+  margin-right: 10px;
+}
+.description-text {
+  color: #757575;
+  font-size: 1rem;
+} */
+
+.side-border {
+  border-left: 8px solid #26a69a;
+  margin-right: 10px;
+  padding: 20px;
+  color: #757575;
+}
+
+.mini-card {
+  padding: 3px 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}

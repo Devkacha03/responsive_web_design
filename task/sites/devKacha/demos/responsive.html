@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>demos | responsive</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid Owl-Carousel-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <nav class="navbar navbar-expand-lg mx-5 my-2">
+              <a class="navbar-brand text-white fst-italic logo" href="#"
+                >owl.carousel.2</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-2">
+                    <a
+                      class="nav-link text-white"
+                      aria-current="page"
+                      href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-white" href="demos.html">Demos</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a
+                      class="nav-link text-white"
+                      href="../docs/docs-welcome.html"
+                      >Docs</a
+                    >
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link text-white" href="#">Download</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-light mb-5">
+      <div class="container py-4">
+        <div class="row ms-4">
+          <div class="col-lg-12 col-md-12 col-12">
+            <h2 class="display-6">Responsive</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row ms-4">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="owl-carousel owl-theme">
+            <div class="item bg-success">
+              <h4>1</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>2</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>3</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>4</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>5</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>6</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>7</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>8</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>9</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>10</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>11</h4>
+            </div>
+            <div class="item bg-success">
+              <h4>12</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 pb-5">
+      <div class="row ms-4">
+        <div class="col-lg-12 col-md-12 col-12">
+          <h3 id="overview" class="my-5">Overview</h3>
+          <div class="side-border">
+            <blockquote>
+              <p>
+                Responsive option can be used for setting breakpoints and
+                additional options within. Try changing your browser width to
+                see what happens with Items and Navigations.
+              </p>
+            </blockquote>
+          </div>
+          <h4 id="about-responsive-option" class="my-5">
+            About responsive option
+          </h4>
+          <p>
+            Setting of the responsive is very simple. Structure of responsive
+            option:
+          </p>
+          <div class="card">
+            <div class="card-header">
+              <pre><code>responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    option1 : value,
+                    option2 : value,
+                    ...
+                },
+                // breakpoint from 480 up
+                480 : {
+                    option1 : value,
+                    option2 : value,
+                    ...
+                },
+                // breakpoint from 768 up
+                768 : {
+                    option1 : value,
+                    option2 : value,
+                    ...
+                }
+            }</code></pre>
+            </div>
+          </div>
+
+          <h3 id="key-facts-" class="my-5">Key facts:</h3>
+          <ul>
+            <li>
+              Each breakpoint key can be a Number value (like in example) or a
+              string: &#39;480&#39;.
+            </li>
+            <li>
+              Owl has an in-built sort option but it’s best to set from the
+              smallest screens to the widest.
+            </li>
+            <li>
+              Responsive options <strong>always</strong> overwrite top level
+              settings.
+            </li>
+            <li>
+              As default, the responsive option is set to true so carousel
+              always tries to fit the wrapper (even if media queries are not
+              support IE7/IE8 etc).
+            </li>
+            <li>
+              If you have non flexible layout then set
+              <code class="mini-card">responsive:false</code>.
+            </li>
+          </ul>
+          <h3 id="live-example" class="my-5">Live Example</h3>
+          <div class="card">
+            <div class="card-header">
+              <pre>
+  <code>$(&#39;.owl-carousel&#39;).owlCarousel({
+       loop:true,
+       margin:10,
+      responsiveClass:true,
+      responsive:{
+            0:{
+               items:1,
+               nav:true
+             },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                 items:5,
+                 nav:true,
+                 loop:false
+            }
+          }
+      })</code>
+              </pre>
+            </div>
+          </div>
+
+          <hr />
+          <h3 id="responsive-related-options-" class="my-5">
+            Responsive related options:
+          </h3>
+          <h4 id="responsiveclass" class="my-5">responsiveClass</h4>
+          <p>
+            Optional helper class. Add &#39;owl-reponsive-&#39; +
+            &#39;breakpoint&#39; class to main element.
+          </p>
+          <h4 id="responsivebaseelement" class="my-5">responsiveBaseElement</h4>
+          <p>
+            As default all responsive breakpoints are corresponding with
+            <code class="mini-card">window</code> width. This option gives you an opportunity to
+            change it to your own class/id like
+            <code class="mini-card">responsiveBaseElement:&quot;.myCustomWrapper&quot;</code>
+          </p>
+          <h4 id="responsiverefreshrate" class="my-5">responsiveRefreshRate</h4>
+          <p>
+            What this does is wait 200ms after you changed the browser width and
+            performs refresh actions (calculating widths/ cloning items etc.)
+            Default refresh rate is 200ms. I think this rate is optimal but you
+            can change it if it’s to slow for you.
+          </p>
+          <p>
+            As not every option is able to use responsive abilities, here’s a
+            full list of responsive options.
+          </p>
+          <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-12">
+              <h4 id="list-of-responsive-options" class="my-5">
+                List of responsive options
+              </h4>
+              <ul>
+                <li>items</li>
+                <li>loop</li>
+                <li>center</li>
+                <li>mouseDrag</li>
+                <li>touchDrag</li>
+                <li>pullDrag</li>
+                <li>freeDrag</li>
+                <li>margin</li>
+                <li>stagePadding</li>
+                <li>merge</li>
+                <li>mergeFit</li>
+                <li>autoWidth</li>
+                <li>autoHeight</li>
+                <li>nav</li>
+                <li>navRewind</li>
+                <li>slideBy</li>
+                <li>dots</li>
+                <li>dotsEach</li>
+                <li>autoplay</li>
+                <li>autoplayTimeout</li>
+                <li>smartSpeed</li>
+                <li>fluidSpeed</li>
+                <li>autoplaySpeed</li>
+                <li>navSpeed</li>
+                <li>dotsSpeed</li>
+                <li>dragEndSpeed</li>
+                <li>responsiveRefreshRate</li>
+                <li>animateOut</li>
+                <li>animateIn</li>
+                <li>fallbackEasing</li>
+                <li>callbacks</li>
+                <li>info</li>
+                <li>and all events</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <h4 id="list-of-responsive-only-on-load" class="my-5">
+                List of responsive only on load
+              </h4>
+              <ul>
+                <li>startPosition</li>
+                <li>URLhashListener</li>
+                <li>navText</li>
+                <li>dotsData</li>
+                <li>lazyLoad</li>
+                <li>lazyContent</li>
+                <li>autoplayHoverPause</li>
+                <li>responsiveBaseElement</li>
+                <li>responsiveClass</li>
+                <li>video</li>
+                <li>videoHeight</li>
+                <li>videoWidth</li>
+                <li>nestedItemSelector</li>
+                <li>itemElement</li>
+                <li>stageElement</li>
+                <li>navContainer</li>
+                <li>dotsContainer</li>
+                <li>and all classes options</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light">
+      <div class="row m-0">
+        <div class="col-lg-12 col-md-12 col-12 py-4">
+          <p class="m-0 text-center text-info">
+            David Deutsch <i class="fa fa-twitter" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 3,
+          margin: 10,
+          loop: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
