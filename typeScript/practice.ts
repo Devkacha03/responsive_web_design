@@ -54,25 +54,44 @@
 
 // console.log(ispalindrom("101"));
 
-function isPrime(num: number): boolean {
-  if (num <= 1) {
-    return false;
+// function isPrime(num: number): boolean {
+//   if (num <= 1) {
+//     return false;
+//   }
+
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// // Test the function
+// let number: number = 35;
+
+// if (isPrime(number)) {
+//   console.log(`${number} is a prime number.`);
+// } else {
+//   console.log(`${number} is not a prime number.`);
+// }
+
+function isArmstrom(num: number): boolean {
+  const numStr = num.toString();
+  const numDigits = numStr.length;
+
+  let sum = 0;
+  for (let i = 0; i < numDigits; i++) {
+    sum += Math.pow(parseInt(numStr[i]), numDigits);
   }
 
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-
-  return true;
+  return sum===sum;
 }
 
-// Test the function
-let number: number = 35;
-
-if (isPrime(number)) {
-  console.log(`${number} is a prime number.`);
+let number=153;
+if(isArmstrom(number)){
+  console.log(`${number} is an Armstrong number.`);
 } else {
-  console.log(`${number} is not a prime number.`);
+  console.log(`${number} is not an Armstrong number.`);
 }
