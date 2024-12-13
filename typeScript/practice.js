@@ -61,19 +61,32 @@
 // } else {
 //   console.log(`${number} is not a prime number.`);
 // }
-function isArmstrom(num) {
-    var numStr = num.toString();
-    var numDigits = numStr.length;
-    var sum = 0;
-    for (var i = 0; i < numDigits; i++) {
-        sum += Math.pow(parseInt(numStr[i]), numDigits);
-    }
-    return sum === sum;
+// function isArmstrom(num: number): boolean {
+//   const numStr = num.toString();
+//   const numDigits = numStr.length;
+//   let sum = 0;
+//   for (let i = 0; i < numDigits; i++) {
+//     sum += Math.pow(parseInt(numStr[i]), numDigits);
+//   }
+//   return sum === sum;
+// }
+var number = 151;
+// if (isArmstrom(number)) {
+//   console.log(`${number} is an Armstrong number.`);
+// } else {
+//   console.log(`${number} is not an Armstrong number.`);
+// }
+function palindromCheck(numb) {
+    var org = numb.toString().toLowerCase();
+    var con = org.split("").reverse().join("");
+    return org === con;
 }
-var number = 153;
-if (isArmstrom(number)) {
-    console.log("".concat(number, " is an Armstrong number."));
-}
-else {
-    console.log("".concat(number, " is not an Armstrong number."));
-}
+console.log(palindromCheck(number) ? "".concat(number, " is palindrom") : "".concat(number, " is not"));
+var stud;
+(function (stud) {
+    stud[stud["nami"] = 0] = "nami";
+    stud[stud["demo"] = 1] = "demo";
+    stud["nm"] = "naruto";
+    stud["ct"] = "lif village";
+})(stud || (stud = {}));
+console.log(stud.demo);
